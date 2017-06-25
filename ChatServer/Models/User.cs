@@ -10,7 +10,7 @@ namespace ChatServer.Models
 
         public string Name { get; set; }
 
-        public Guid Key { get; set; }
+        public Guid Token { get; set; }
 
         [InverseProperty("FromUser")]
         public ICollection<ChatLog> FromUserChatLog { get; set; }
